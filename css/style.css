@@ -34,6 +34,15 @@
           box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 body {
   font-family: "Alegreya Sans", sans-serif;
   font-size: 18px;
@@ -251,16 +260,22 @@ img {
   width: 17px;
 }
 .right-dotted__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.right-dotted__btn {
   position: relative;
   border: 1px solid transparent;
   width: 17px;
   height: 17px;
   border-radius: 50%;
+  background-color: transparent;
   cursor: pointer;
   -webkit-transition: border-color 0.3s ease-out;
   transition: border-color 0.3s ease-out;
 }
-.right-dotted__item::after {
+.right-dotted__btn::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -272,7 +287,7 @@ img {
   -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
 }
-.right-dotted__item:hover, .right-dotted__item--active {
+.right-dotted__item:hover .right-dotted__btn, .right-dotted__item--active .right-dotted__btn {
   border-color: #fff;
   -webkit-box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0.1);
@@ -555,6 +570,14 @@ img {
   border: 7px solid transparent;
   overflow: hidden;
 }
+.review-thumb__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
 
 .review-thumb--active {
   border-color: #FEDB3F;
@@ -575,7 +598,7 @@ img {
   color: #fff;
 }
 
-.form-delivery__cols-2 {
+.form-delivery__cols {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

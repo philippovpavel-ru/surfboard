@@ -56,6 +56,13 @@
 	border-radius: 50%;
 	border: 7px solid transparent;
 	overflow: hidden;
+
+	&__btn {
+		display: flex;
+		outline: 0;
+		border: 0;
+		cursor: pointer;
+	}
 }
 
 .review-thumb--active {
