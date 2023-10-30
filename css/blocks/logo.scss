@@ -1,0 +1,14 @@
+.logo {
+	&__link {
+		display: block;
+		height: 40px;
+		color: #fff;
+	}
+
+	&__img {
+		width: 56px;
+		height: 40px;
+		object-fit: contain;
+		object-position: center;
+	}
+}

@@ -1,0 +1,25 @@
+.form-delivery {
+	&__cols-2 {
+		display: flex;
+		grid-gap: 26px;
+	}
+
+	&__col {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		gap: 14px;
+	}
+
+	.form-field__radios {
+		margin-top: 15px;
+	}
+
+	.form-field__reset {
+		color: #fff;
+	}
+
+	.form-field__btns {
+		margin-top: 44px;
+	}
+}

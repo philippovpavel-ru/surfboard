@@ -1,0 +1,103 @@
+.form-field {
+	&__row {
+		display: flex;
+		gap: 20px;
+	}
+
+	&__radios,
+	&__btns {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+	&__label {
+		flex: 1;
+		cursor: pointer;
+	}
+
+	&__span {
+		display: block;
+	}
+
+	&__input,
+	&__textarea {
+		width: 100%;
+		padding: 19px 12px;
+		border-radius: 3px;
+		border: 3px solid transparent;
+		outline: 0;
+		font-size: 14px;
+		font-family: 'Open Sans', sans-serif;
+
+		&:focus,
+		&:active,
+		&:focus-visible {
+			border-color: $accent;
+		}
+	}
+
+	&__textarea {
+		height: 152px;
+	}
+
+	&__radio,
+	&__checkbox {
+		display: none;
+	}
+
+	&__label:has([type="radio"]) {
+		.form-field__span {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+
+			&::before {
+				content: '';
+				display: inline-block;
+				width: 24px;
+				height: 24px;
+				background-color: #fff;
+				border-radius: 50%;
+				border: 6px solid #fff;
+				box-sizing: border-box;
+				aspect-ratio: 1/1;
+			}
+		}
+	}
+
+	&__label:has([type="radio"]:checked) {
+		.form-field__span::before {
+			background-color: $accent;
+		}
+	}
+
+	&__label:has([type="checkbox"]) {
+		.form-field__span {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+
+			&::before {
+				content: '';
+				display: inline-block;
+				width: 24px;
+				height: 24px;
+				background-color: #fff;
+				background-image: url('../img/check.svg');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 0;
+				border-radius: 3px;
+				box-sizing: border-box;
+				aspect-ratio: 1/1;
+			}
+		}
+	}
+
+	&__label:has([type="checkbox"]:checked) {
+	.form-field__span::before {
+			background-size: 10px 10px;
+		}
+	}
+}

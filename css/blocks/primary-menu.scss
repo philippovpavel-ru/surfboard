@@ -1,0 +1,14 @@
+.primary-menu {
+	color: #fff;
+
+	&__list {
+		display: flex;
+		gap: 22px;
+	}
+
+	&__link {
+		color: #fff;
+		font-size: 18px;
+		font-weight: 700;
+	}
+}

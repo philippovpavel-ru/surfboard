@@ -1,0 +1,24 @@
+.contacts-phone {
+	&__icon {
+		margin-right: 7px;
+
+		path {
+			fill: #292929;
+		}
+	}
+}
+
+.header-contacts {
+	&__icon {
+		width: 13px;
+		height: 14px;
+		path {
+			fill: #fff;
+		}
+	}
+	&__phone {
+		font-size: 22px;
+		font-weight: 700;
+		color: #fff;
+	}
+}
