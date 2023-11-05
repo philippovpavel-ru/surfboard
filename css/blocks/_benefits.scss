@@ -1,24 +1,25 @@
 .benefits {
 	&__list {
 		display: flex;
-		gap: 30px;
+		gap: rem(30px);
 		align-items: center;
 	}
 }
 
 .benefit {
 	display: flex;
-	gap: 11px;
+	gap: rem(11px);
 
 	&__icon {
-		width: 41px;
-		height: 41px;
+		width: rem(41px);
+		height: rem(41px);
+		fill: #fff;
 	}
 
 	&__desc {
-		max-width: 90px;
+		max-width: rem(90px);
 		font-weight: 700;
-		font-size: 16px;
+		font-size: rem(16px);
 		color: #fff;
 	}
 }

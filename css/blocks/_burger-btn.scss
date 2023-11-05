@@ -1,0 +1,25 @@
+.burger-btn {
+	width: rem(26px);
+	display: none;
+	flex-direction: column;
+	gap: 5px;
+	cursor: pointer;
+
+	@include tablets {
+		display: flex;
+	}
+
+	&__line {
+		width: 100%;
+		height: rem(4px);
+		background-color: #fff;
+		border-radius: 7px;
+		transition: transform .3s ease-out;
+	}
+
+	&:hover {
+		.burger-btn__line:nth-child(2) {
+			transform: translateX(rem(5px));
+		}
+	}
+}

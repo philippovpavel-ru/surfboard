@@ -4,9 +4,19 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
-	padding-top: 26px;
-	padding-bottom: 66px;
+	padding-top: rem(26px);
+	padding-bottom: rem(66px);
 	height: 100vh;
+
+	@include tablets {
+		padding-top: 0;
+		padding-bottom: 0;
+		background-position: top rem(26px) right 10%;
+	}
+
+	@include phones {
+		background-position: top rem(26px) right 17%;
+	}
 
 	&__container {
 		display: flex;
@@ -14,24 +24,55 @@
 		justify-content: space-between;
 		width: 100%;
 		height: 100%;
+		@include tablets {
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
 	}
 
 	&__title {
 		text-transform: uppercase;
 		font-weight: 700;
-		font-size: 48px;
+		font-size: rem(48px);
 		line-height: 1.2;
 		color: #fff;
-		max-width: 495px;
-		margin-bottom: 17px;
+		max-width: rem(495px);
+		margin-bottom: rem(17px);
+
+		@include phones {
+			font-size: rem(40px);
+			max-width: rem(665px);
+			word-break: break-word;
+		}
 	}
 
 	&__description {
 		color: #fff;
-		font-size: 21px;
+		font-size: rem(21px);
+
+		@include phones {
+			font-size: rem(18px);
+		}
 	}
 
 	&__btn {
-		margin-top: 40px;
+		margin-top: rem(40px);
+
+		@include tablets {
+			margin-top: rem(44px);
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		@include phones {
+			font-size: rem(19px);
+		}
+	}
+
+	&__benefits {
+		@include tablets {
+			display: none;
+		}
 	}
 }

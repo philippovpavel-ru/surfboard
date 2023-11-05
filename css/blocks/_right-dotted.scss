@@ -3,12 +3,21 @@
 	top: 0;
 	right: 45px;
 	height: 100%;
+	width: rem(17px);
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: 4px;
 	align-items: center;
-	width: 17px;
+
+	@include tablets {
+		display: none;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: rem(4px);
+		align-items: center;
+	}
 
 	&__item {
 		display: flex;
@@ -17,8 +26,8 @@
 	&__btn {
 		position: relative;
 		border: 1px solid transparent;
-		width: 17px;
-		height: 17px;
+		width: rem(17px);
+		height: rem(17px);
 		border-radius: 50%;
 		background-color: transparent;
 		cursor: pointer;
@@ -30,8 +39,8 @@
 			margin: auto;
 			border-radius: 50%;
 			background-color: #fff;
-			width: 6px;
-			height: 6px;
+			width: rem(6px);
+			height: rem(6px);
 			box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
 		}
 	}

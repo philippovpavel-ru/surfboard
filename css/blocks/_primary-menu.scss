@@ -3,12 +3,14 @@
 
 	&__list {
 		display: flex;
-		gap: 22px;
+		gap: rem(22px);
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	&__link {
 		color: #fff;
-		font-size: 18px;
+		font-size: rem(18px);
 		font-weight: 700;
 	}
 }

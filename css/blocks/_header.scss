@@ -1,9 +1,28 @@
 .header {
 	background-color: transparent;
 
+	@include tablets {
+		background-color: $darkblue;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding-top: rem(26px);
+		padding-bottom: rem(26px);
+		z-index: 15;
+	}
+
 	&-container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		gap: 15px;
+	}
+
+	&__primary-menu,
+	&-contacts {
+		@include tablets {
+			display: none;
+		}
 	}
 }
