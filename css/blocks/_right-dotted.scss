@@ -1,8 +1,8 @@
 .right-dotted {
 	position: fixed;
-	top: 0;
+	top: 50%;
+	transform: translateY(-50%);
 	right: 45px;
-	height: 100%;
 	width: rem(17px);
 	display: flex;
 	align-items: center;

@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css?231105">
+	<link rel="stylesheet" href="css/style.css?231106_1212">
 </head>
 <body>
 	<main class="wrapper">
@@ -61,12 +61,6 @@
 								<span class="contacts-phone__number">8 800 903 90 90</span>
 							</a>
 						</address>
-
-						<buttom class="burger-btn header__burger">
-							<div class="burger-btn__line"></div>
-							<div class="burger-btn__line"></div>
-							<div class="burger-btn__line"></div>
-						</buttom>
 					</div>
 				</header>
 
@@ -301,57 +295,59 @@
 			<div class="section-map__wrapper">
 				<img src="img/map.jpg" loading="lazy" class="section-map__map">
 			</div>
+
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__wrapper">
+						<address class="footer__contacts">
+							<div class="contacts-address footer-contacts__address">
+								<span class="contacts-address__text">Москва, ул.Новый Арбат, д.31/12</span>
+							</div>
+
+							<a href="tel:+78009039090" class="contacts-phone">
+								<svg class="contacts-phone__icon">
+									<use xlink:href="img/main-sprite.svg#phone"></use>
+								</svg>
+								<span class="contacts-phone__number">8 800 903 90 90</span>
+							</a>
+						</address>
+
+						<ul class="socs">
+							<li class="soc socs__item">
+								<a href="#" class="soc__link" title="ВКонтакте">
+									<svg class="soc__svg soc__svg--vk">
+										<use xlink:href="img/main-sprite.svg#vk"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="soc socs__item soc__item--active">
+								<a href="#" class="soc__link" title="Facebook">
+									<svg class="soc__svg soc__svg--fb">
+										<use xlink:href="img/main-sprite.svg#fb"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="soc socs__item">
+								<a href="#" class="soc__link" title="Instagram">
+									<svg class="soc__svg soc__svg--instagram">
+										<use xlink:href="img/main-sprite.svg#instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="soc socs__item">
+								<a href="#" class="soc__link" title="Twitter">
+									<svg class="soc__svg soc__svg--twitter">
+										<use xlink:href="img/main-sprite.svg#twitter"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
 		</section>
 
-		<footer class="footer">
-			<div class="container">
-				<div class="footer__wrapper">
-					<address class="footer__contacts">
-						<div class="contacts-address footer-contacts__address">
-							<span class="contacts-address__text">Москва, ул.Новый Арбат, д.31/12</span>
-						</div>
 
-						<a href="tel:+78009039090" class="contacts-phone">
-							<svg class="contacts-phone__icon">
-								<use xlink:href="img/main-sprite.svg#phone"></use>
-							</svg>
-							<span class="contacts-phone__number">8 800 903 90 90</span>
-						</a>
-					</address>
-
-					<ul class="socs">
-						<li class="soc socs__item">
-							<a href="#" class="soc__link" title="ВКонтакте">
-								<svg class="soc__svg soc__svg--vk">
-									<use xlink:href="img/main-sprite.svg#vk"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="soc socs__item soc__item--active">
-							<a href="#" class="soc__link" title="Facebook">
-								<svg class="soc__svg soc__svg--fb">
-									<use xlink:href="img/main-sprite.svg#fb"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="soc socs__item">
-							<a href="#" class="soc__link" title="Instagram">
-								<svg class="soc__svg soc__svg--instagram">
-									<use xlink:href="img/main-sprite.svg#instagram"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="soc socs__item">
-							<a href="#" class="soc__link" title="Twitter">
-								<svg class="soc__svg soc__svg--twitter">
-									<use xlink:href="img/main-sprite.svg#twitter"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</footer>
 	</main>
 
 	<nav class="right-dotted">
@@ -385,5 +381,11 @@
 			</li>
 		</ul>
 	</nav>
+
+	<button class="burger-btn header__burger">
+		<div class="burger-btn__line"></div>
+		<div class="burger-btn__line"></div>
+		<div class="burger-btn__line"></div>
+	</button>
 </body>
 </html>
