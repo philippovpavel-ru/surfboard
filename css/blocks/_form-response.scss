@@ -1,0 +1,34 @@
+.form-response {
+	max-width: rem(309px);
+	width: 100%;
+	background-color: #fff;
+	position: fixed;
+	inset: 0;
+	margin: auto;
+	border: 0;
+	text-align: center;
+
+	&::backdrop {
+		background-color: #333537;
+	}
+
+	&__wrapper {
+		padding: rem(37px);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: rem(18px);
+	}
+
+	&__text {
+		font-size: rem(18px);
+		font-weight: 500;
+		color: #000;;
+	}
+
+	&__invalid {
+		.form-response__text {
+			color: red;
+		}
+	}
+}

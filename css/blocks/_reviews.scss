@@ -82,6 +82,7 @@
 	border-radius: 50%;
 	border: 7px solid transparent;
 	overflow: hidden;
+	transition: border-color .3s ease-out;
 
 	@include phones {
 		width: rem(64px);
@@ -95,8 +96,9 @@
 		border: 0;
 		cursor: pointer;
 	}
+
+	&.swiper-slide-thumb-active {
+		border-color: $accent;
+	}
 }
 
-.review-thumb--active {
-	border-color: $accent;
-}

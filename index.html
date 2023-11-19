@@ -11,10 +11,13 @@
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css?231113_0137">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.css?231119_0133">
 
-	<script src="js/main.js?231113_0137" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+	<script src="js/main.js?231119_0133" defer></script>
 </head>
+
 <body>
 	<main class="wrapper">
 		<section class="section section-primary">
@@ -146,9 +149,9 @@
 
 		<section class="section section-products">
 			<div class="container">
-				<div class="product-slider">
-					<ul class="product-slider__list">
-						<li class="product-slide product-slider__item">
+				<div class="swiper productsSwiper product-slider">
+					<ul class="swiper-wrapper product-slider__list">
+						<li class="swiper-slide product-slide product-slider__item">
 							<div class="product-slide__img-wrapper">
 								<img src="img/product-1.png" alt="" class="product-slide__img">
 							</div>
@@ -246,7 +249,7 @@
 							</div>
 						</li>
 
-						<li class="product-slide product-slider__item">
+						<li class="swiper-slide product-slide product-slider__item">
 							<div class="product-slide__img-wrapper">
 								<img src="img/product-2.png" alt="" class="product-slide__img">
 							</div>
@@ -346,8 +349,78 @@
 					</ul>
 
 					<div class="product-slider__arrows">
-						<a href="#" class="product-slider__arrow product-slider__arrow--left"></a>
-						<a href="#" class="product-slider__arrow product-slider__arrow--right"></a>
+						<a href="#" class="swiper-button-prev product-slider__arrow product-slider__arrow--left"></a>
+						<a href="#" class="swiper-button-next product-slider__arrow product-slider__arrow--right"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-team">
+			<div class="container">
+				<div class="section__headline section-team__headline">
+					<h2 class="section__title">Команда</h2>
+				</div>
+
+				<div class="team">
+					<ul class="team__wrapper">
+						<ul class="team__list">
+							<li class="member team__item">
+								<div class="member__img-wrapper member__img-wrapper--only-desktop">
+									<img src="img/member-1.jpg" alt="Борис Федорович" class="member__img">
+								</div>
+								<a href="#" class="member__name member__switcher">Борис Федорович</a>
+								<div class="member__info">
+									<div class="member__img-wrapper member__img-wrapper--not-desktop">
+										<img src="img/member-1.jpg" alt="Борис Федорович" class="member__img">
+									</div>
+									<div class="member__job">Главный технолог</div>
+									<div class="member__responsibility">Отвечает за материалы и разработку досок</div>
+								</div>
+							</li>
+
+							<li class="member team__item">
+								<div class="member__img-wrapper member__img-wrapper--only-desktop">
+									<img src="img/member-2.jpg" alt="Ольга Невзорова" class="member__img">
+								</div>
+								<a href="!#" class="member__name member__switcher">Ольга Невзорова</a>
+								<div class="member__info">
+									<div class="member__img-wrapper member__img-wrapper--not-desktop">
+										<img src="img/member-2.jpg" alt="Ольга Невзорова" class="member__img">
+									</div>
+									<div class="member__job">Дизайнер</div>
+									<div class="member__responsibility">Создает дизайн серфбордов</div>
+								</div>
+							</li>
+
+							<li class="member team__item">
+								<div class="member__img-wrapper member__img-wrapper--only-desktop">
+									<img src="img/member-3.jpg" alt="Ингвар Нильсон" class="member__img">
+								</div>
+								<a href="!#" class="member__name member__switcher">Ингвар Нильсон</a>
+								<div class="member__info">
+									<div class="member__img-wrapper member__img-wrapper--not-desktop">
+										<img src="img/member-3.jpg" alt="Ингвар Нильсон" class="member__img">
+									</div>
+									<div class="member__job">Спортсмен</div>
+									<div class="member__responsibility">Участвует в разработке серфбордов</div>
+								</div>
+							</li>
+
+							<li class="member team__item">
+								<div class="member__img-wrapper member__img-wrapper--only-desktop">
+									<img src="img/member-4.jpg" alt="Екатерина Иванова" class="member__img">
+								</div>
+								<a href="!#" class="member__name member__switcher">Екатерина Иванова</a>
+								<div class="member__info">
+									<div class="member__img-wrapper member__img-wrapper--not-desktop">
+										<img src="img/member-4.jpg" alt="Екатерина Иванова" class="member__img">
+									</div>
+									<div class="member__job">Тестировщик</div>
+									<div class="member__responsibility">Отвечает за разработку новых продуктов</div>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -359,63 +432,67 @@
 					<h2 class="section__title">Отзывы</h2>
 				</div>
 
-				<ul class="reviews section-reviews__list">
-					<li class="review reviews__list">
-						<div class="review__ava">
-							<img loading="lazy" src="img/ava-1.jpg" alt="Ольга Макарова" class="review__img">
-						</div>
-						<div class="review__content">
-							<h3 class="review__title">Лучший дизайн</h3>
-							<div class="review__text">
-								<p>Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала себе доску в SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и комментарии. В итоге получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)</p>
+				<div class="swiper reviewsSwiper reviews">
+					<ul class="swiper-wrapper section-reviews__list">
+						<li class="swiper-slide review reviews__list">
+							<div class="review__ava">
+								<img loading="lazy" src="img/ava-1.jpg" alt="Ольга Макарова" class="review__img">
 							</div>
-							<div class="review__name">Ольга Макарова</div>
-						</div>
-					</li>
-					<li class="review reviews__list">
-						<div class="review__ava">
-							<img loading="lazy" src="img/ava-2.jpg" alt="Марк Брюлов" class="review__img">
-						</div>
-						<div class="review__content">
-							<h3 class="review__title">Нереальная скорость</h3>
-							<div class="review__text">
-								<p>Я занимаюсь профессиональным спортом. Доверил изготовление доски для соревнований ребятам из Surfboard и не пожалел: 1 место на соревнованиях.</p>
-								<p>Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы на соревнованиях!</p>
+							<div class="review__content">
+								<h3 class="review__title">Лучший дизайн</h3>
+								<div class="review__text">
+									<p>Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала себе доску в SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и комментарии. В итоге получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)</p>
+								</div>
+								<div class="review__name">Ольга Макарова</div>
 							</div>
-							<div class="review__name">Марк Брюлов</div>
-						</div>
-					</li>
-					<li class="review reviews__list">
-						<div class="review__ava">
-							<img loading="lazy" src="img/ava-3.jpg" alt="Василий Поперечный" class="review__img">
-						</div>
-						<div class="review__content">
-							<h3 class="review__title">Устойчивость и безопасность</h3>
-							<div class="review__text">
-								<p>Я заказывал доски для своих детей. Мне было важно, чтобы они были устойчивые, так как безопасность детей на первом месте. Доски были изготовлены по индивидуальным замерам с учетом роста и веса каждого ребенка. Теперь дети катаются и им нравится!</p>
+						</li>
+						<li class="swiper-slide review reviews__list">
+							<div class="review__ava">
+								<img loading="lazy" src="img/ava-2.jpg" alt="Марк Брюлов" class="review__img">
 							</div>
-							<div class="review__name">Василий Поперечный</div>
-						</div>
-					</li>
-				</ul>
+							<div class="review__content">
+								<h3 class="review__title">Нереальная скорость</h3>
+								<div class="review__text">
+									<p>Я занимаюсь профессиональным спортом. Доверил изготовление доски для соревнований ребятам из Surfboard и не пожалел: 1 место на соревнованиях.</p>
+									<p>Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы на соревнованиях!</p>
+								</div>
+								<div class="review__name">Марк Брюлов</div>
+							</div>
+						</li>
+						<li class="swiper-slide review reviews__list">
+							<div class="review__ava">
+								<img loading="lazy" src="img/ava-3.jpg" alt="Василий Поперечный" class="review__img">
+							</div>
+							<div class="review__content">
+								<h3 class="review__title">Устойчивость и безопасность</h3>
+								<div class="review__text">
+									<p>Я заказывал доски для своих детей. Мне было важно, чтобы они были устойчивые, так как безопасность детей на первом месте. Доски были изготовлены по индивидуальным замерам с учетом роста и веса каждого ребенка. Теперь дети катаются и им нравится!</p>
+								</div>
+								<div class="review__name">Василий Поперечный</div>
+							</div>
+						</li>
+					</ul>
+				</div>
 
-				<ul class="reviews-thumb section-reviews__thumb">
-					<li class="review-thumb review-thumb--active reviews-thumb__item">
-						<a href="#" class="review-thumb__btn">
-							<img loading="lazy" src="img/ava-1.jpg" alt="Ольга Макарова" class="review-thumb__img">
-						</a>
-					</li>
-					<li class="review-thumb reviews-thumb__item">
-						<a href="#" class="review-thumb__btn">
-							<img loading="lazy" src="img/ava-2.jpg" alt="Марк Брюлов" class="review-thumb__img">
-						</a>
-					</li>
-					<li class="review-thumb reviews-thumb__item">
-						<a href="#" class="review-thumb__btn">
-							<img loading="lazy" src="img/ava-3.jpg" alt="Василий Поперечный" class="review-thumb__img">
-						</a>
-					</li>
-				</ul>
+				<div class="swiper thumbsReviewsSwiper">
+					<ul class="swiper-wrapper reviews-thumb section-reviews__thumb">
+						<li class="swiper-slide review-thumb review-thumb--active reviews-thumb__item">
+							<a href="#" class="review-thumb__btn">
+								<img loading="lazy" src="img/ava-1.jpg" alt="Ольга Макарова" class="review-thumb__img">
+							</a>
+						</li>
+						<li class="swiper-slide review-thumb reviews-thumb__item">
+							<a href="#" class="review-thumb__btn">
+								<img loading="lazy" src="img/ava-2.jpg" alt="Марк Брюлов" class="review-thumb__img">
+							</a>
+						</li>
+						<li class="swiper-slide review-thumb reviews-thumb__item">
+							<a href="#" class="review-thumb__btn">
+								<img loading="lazy" src="img/ava-3.jpg" alt="Василий Поперечный" class="review-thumb__img">
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 
@@ -425,41 +502,41 @@
 					<h2 class="section__title section-form-delivery__title">Закажите доску</h2>
 				</div>
 
-				<form action="#" class="form-delivery">
+				<form class="form-delivery">
 					<div class="form-delivery__cols">
 						<div class="form-delivery__col">
 							<div class="form-field form-field__row">
 								<label class="form-field__label">
 									<span class="form-field__span">Имя</span>
-									<input type="text" class="form-field__input">
+									<input type="text" class="form-field__input" name="name" required>
 								</label>
 								<label class="form-field__label">
 									<span class="form-field__span">Телефон</span>
-									<input type="tel" class="form-field__input">
+									<input type="tel" class="form-field__input" name="phone" required>
 								</label>
 							</div>
 							<div class="form-field form-field__row">
 								<label class="form-field__label">
 									<span class="form-field__span">Улица</span>
-									<input type="text" class="form-field__input">
+									<input type="text" class="form-field__input" name="street">
 								</label>
 							</div>
 							<div class="form-field form-field__row">
 								<label class="form-field__label">
 									<span class="form-field__span">Дом</span>
-									<input type="number" class="form-field__input">
+									<input type="number" class="form-field__input" name="house" min="1">
 								</label>
 								<label class="form-field__label">
 									<span class="form-field__span">Корпус</span>
-									<input type="number" class="form-field__input">
+									<input type="number" class="form-field__input" name="corpus" min="1">
 								</label>
 								<label class="form-field__label">
 									<span class="form-field__span">Квартира</span>
-									<input type="number" class="form-field__input">
+									<input type="number" class="form-field__input" name="apartment" min="1">
 								</label>
 								<label class="form-field__label">
 									<span class="form-field__span">Этаж</span>
-									<input type="number" class="form-field__input">
+									<input type="number" class="form-field__input" name="floor" min="1">
 								</label>
 							</div>
 						</div>
@@ -468,18 +545,18 @@
 							<div class="form-field form-field__row">
 								<label class="form-field__label">
 									<span class="form-field__span">Комментарий</span>
-									<textarea class="form-field__textarea"></textarea>
+									<textarea class="form-field__textarea" name="comment" required></textarea>
 								</label>
 							</div>
 
 							<div class="form-field form-field__radios">
 								<label class="form-field__label">
 									<span class="form-field__span">Оплата наличными</span>
-									<input type="radio" name="pay_method" class="form-field__radio">
+									<input type="radio" name="pay_method" value="Оплата наличными" class="form-field__radio">
 								</label>
 								<label class="form-field__label">
 									<span class="form-field__span">Оплата картой</span>
-									<input type="radio" name="pay_method" checked class="form-field__radio">
+									<input type="radio" name="pay_method" value="Оплата картой" checked class="form-field__radio">
 								</label>
 							</div>
 
@@ -488,9 +565,11 @@
 									<span class="form-field__span">
 										Не перезванивать
 									</span>
-									<input type="checkbox" checked class="form-field__checkbox">
+									<input type="checkbox" name="dont_call" checked class="form-field__checkbox">
 								</label>
 							</div>
+
+							<input type="hidden" name="to" value="mail@mail.mail">
 
 							<div class="form-field form-field__btns">
 								<button type="submit" class="btn btn-primary btn-submit form-field__submit">Заказать</button>
@@ -629,6 +708,13 @@
 					</li>
 				</ul>
 			</nav>
+		</div>
+	</dialog>
+
+	<dialog id="form-response" class="form-response">
+		<div class="form-response__wrapper">
+			<div class="form-response__text"></div>
+			<a href="#" class="btn btn-primary form-response__btn">Закрыть</a>
 		</div>
 	</dialog>
 </body>

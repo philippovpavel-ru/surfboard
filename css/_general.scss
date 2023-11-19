@@ -7,6 +7,10 @@ $fontsize: 18px;
 $tablets: 768px;
 $phones: 480px;
 
+@function lh($lh, $fsz) {
+	@return $lh / $fsz;
+}
+
 // selection
 ::selection {
 	background: $accent;

@@ -54,6 +54,10 @@
 		display: none;
 	}
 
+	&__invalid {
+		border-color: red;
+	}
+
 	&__label:has([type="radio"]) {
 		.form-field__span {
 			display: flex;

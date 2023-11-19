@@ -7,11 +7,10 @@
 	&__list {
 		display: flex;
 		width: 100%;
-		overflow: hidden;
 	}
 
 	&__arrow {
-		background: url(../img/product-arrow-right.svg) center center no-repeat;
+		// background: url(../img/product-arrow-right.svg) center center no-repeat;
 		background-size: contain;
 		display: block;
 		position: absolute;
@@ -20,10 +19,11 @@
 		top: 45%;
 		transform: translateY(-50%);
 		z-index: 10;
+		color: #151515;
+		margin-top: unset;
 
 		&--left {
 			left: 0;
-			transform: rotate(180deg);
 
 			@include tablets {
 				left: 22%;
@@ -37,17 +37,17 @@
 		}
 
 		&--right {
-			top: 49%;
+			top: 45%;
 			right: 0;
 
 			@include tablets {
 				right: 22%;
-				top: 34%;
+				top: 31%;
 			}
 
 			@include phones {
 				right: 1%;
-				top: 28%;
+				top: 25%;
 			}
 		}
 	}
