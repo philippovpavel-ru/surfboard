@@ -1,0 +1,32 @@
+.contacts-phone {
+	white-space: nowrap;
+	color: #292929;
+
+	&__icon {
+		width: rem(13px);
+		height: rem(14px);
+		margin-right: rem(7px);
+		fill: #292929;
+	}
+}
+
+.contacts-address {
+	white-space: nowrap;
+}
+
+.header-contacts {
+	&__icon {
+		fill: #fff;
+	}
+	&__phone {
+		font-size: rem(22px);
+		font-weight: 700;
+		color: #fff;
+	}
+}
+
+.footer-contacts {
+	&__address {
+		margin-bottom: rem(6px);
+	}
+}

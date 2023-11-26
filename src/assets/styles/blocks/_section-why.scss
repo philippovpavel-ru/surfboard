@@ -1,0 +1,12 @@
+.section-why {
+	padding-top: rem(103px);
+	padding-bottom: rem(112px);
+
+	&__list {
+		margin-top: rem(49px);
+
+		@include phones {
+			margin-top: rem(53px);
+		}
+	}
+}

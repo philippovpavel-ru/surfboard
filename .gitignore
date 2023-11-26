@@ -1,2 +1,6 @@
-.vscode/
-prepros.config
+/**/node_modules/
+/.vscode/
+/.git/
+/**/Thumbs.db
+/**/*.DS_Store
+/**/debug.log

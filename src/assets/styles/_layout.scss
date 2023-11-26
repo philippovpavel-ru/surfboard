@@ -1,0 +1,80 @@
+.wrapper {
+	position: relative;
+}
+
+.container {
+	width: 100%;
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	@include tablets {
+		max-width: 744px;
+	}
+}
+
+.section {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+
+	&__title {
+		font-weight: 700;
+		font-size: rem(48px);
+		text-align: center;
+		color: #292929;
+		text-transform: uppercase;
+		max-width: rem(500px);
+		margin-left: auto;
+		margin-right: auto;
+
+		@include phones {
+			font-size: rem(40px);
+		}
+	}
+
+	&__desc {
+		max-width: rem(436px);
+		margin-top: rem(20px);
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.btn {
+	padding: rem(21px) rem(41px);
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: rem(16px);
+	color: #000;
+	display: block;
+	background-color: #F2F5F4;
+	width: max-content;
+	border-radius: rem(100px);
+	border: 0;
+	cursor: pointer;
+	transition: opacity .3s ease-out;
+
+	&-primary {
+		background-color: $accent;
+	}
+
+	&-submit {
+		background-color: #FFD517;
+	}
+
+	&-reset {
+		background-color: transparent;
+		text-transform: capitalize;
+		font-weight: 400;
+		font-size: rem(18px);
+		padding: 0;
+	}
+
+	&:hover {
+		opacity: .7;
+	}
+}

@@ -1,0 +1,27 @@
+.primary-menu {
+	color: #fff;
+
+	&__list {
+		display: flex;
+		gap: rem(22px);
+		flex-wrap: wrap;
+		justify-content: center;
+
+		@include tablets {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__link {
+		color: #fff;
+		font-size: rem(18px);
+		font-weight: 700;
+
+		@include tablets {
+			font-size: rem(36px);
+			font-weight: 400;
+			text-align: center;
+		}
+	}
+}

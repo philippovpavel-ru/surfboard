@@ -1,0 +1,16 @@
+.section-form-delivery {
+	background-color: #1a1a1a;
+	background-image: url('../img/section-form-delivery-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+
+	&__headline {
+		margin-bottom: rem(60px);
+	}
+
+	&__title {
+		color: #fff;
+	}
+}

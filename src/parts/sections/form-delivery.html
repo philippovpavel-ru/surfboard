@@ -1,0 +1,84 @@
+<section class="section section-form-delivery swiper-slide" data-section-theme="white" data-hash="form">
+	<div class="container">
+		<div class="section__headline section-form-delivery__headline">
+			<h2 class="section__title section-form-delivery__title">Закажите доску</h2>
+		</div>
+
+		<form class="form-delivery">
+			<div class="form-delivery__cols">
+				<div class="form-delivery__col">
+					<div class="form-field form-field__row">
+						<label class="form-field__label">
+							<span class="form-field__span">Имя</span>
+							<input type="text" class="form-field__input" name="name" required>
+						</label>
+						<label class="form-field__label">
+							<span class="form-field__span">Телефон</span>
+							<input type="tel" class="form-field__input" name="phone" required>
+						</label>
+					</div>
+					<div class="form-field form-field__row">
+						<label class="form-field__label">
+							<span class="form-field__span">Улица</span>
+							<input type="text" class="form-field__input" name="street">
+						</label>
+					</div>
+					<div class="form-field form-field__row">
+						<label class="form-field__label">
+							<span class="form-field__span">Дом</span>
+							<input type="number" class="form-field__input" name="house" min="1">
+						</label>
+						<label class="form-field__label">
+							<span class="form-field__span">Корпус</span>
+							<input type="number" class="form-field__input" name="corpus" min="1">
+						</label>
+						<label class="form-field__label">
+							<span class="form-field__span">Квартира</span>
+							<input type="number" class="form-field__input" name="apartment" min="1">
+						</label>
+						<label class="form-field__label">
+							<span class="form-field__span">Этаж</span>
+							<input type="number" class="form-field__input" name="floor" min="1">
+						</label>
+					</div>
+				</div>
+
+				<div class="form-delivery__col">
+					<div class="form-field form-field__row">
+						<label class="form-field__label">
+							<span class="form-field__span">Комментарий</span>
+							<textarea class="form-field__textarea" name="comment" required></textarea>
+						</label>
+					</div>
+
+					<div class="form-field form-field__radios">
+						<label class="form-field__label">
+							<span class="form-field__span">Оплата наличными</span>
+							<input type="radio" name="pay_method" value="Оплата наличными" class="form-field__radio">
+						</label>
+						<label class="form-field__label">
+							<span class="form-field__span">Оплата картой</span>
+							<input type="radio" name="pay_method" value="Оплата картой" checked class="form-field__radio">
+						</label>
+					</div>
+
+					<div class="form-field form-field__checkboxes">
+						<label class="form-field__label">
+							<span class="form-field__span">
+								Не перезванивать
+							</span>
+							<input type="checkbox" name="dont_call" checked class="form-field__checkbox">
+						</label>
+					</div>
+
+					<input type="hidden" name="to" value="mail@mail.mail">
+
+					<div class="form-field form-field__btns">
+						<button type="submit" class="btn btn-primary btn-submit form-field__submit">Заказать</button>
+						<button type="reset" class="btn btn-reset form-field__reset">Очистить</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</section>

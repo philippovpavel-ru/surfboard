@@ -1,0 +1,24 @@
+.footer {
+	width: 100%;
+	padding: rem(17px) 0;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: rem(15px);
+
+		@include phones {
+			flex-direction: column;
+		}
+	}
+
+	&__contacts {
+		font-size: rem(21px);
+		color: #292929;
+
+		@include phones {
+			text-align: center;
+		}
+	}
+}

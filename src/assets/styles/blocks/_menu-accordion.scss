@@ -1,0 +1,101 @@
+.menu-accordion {
+	position: relative;
+	background: url(../img/section-menu-accordion-bg.jpg) center center/cover no-repeat;
+
+	&__title {
+		color: #fff;
+		font-size: rem(48px);
+		font-weight: 700;
+		text-transform: uppercase;
+		padding-left: rem(84px);
+		padding-bottom: rem(485px);
+
+		@include tablets {
+			padding-bottom: rem(765px);
+			padding-left: rem(40px);
+			padding-top: rem(84px);
+		}
+	
+		@include phones {
+			font-size: rem(42px);
+			padding-bottom: rem(495px);
+			padding-left: rem(6px);
+			padding-top: rem(78px);
+		}
+	}
+
+	&__list {
+		display: flex;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	&__item {
+		display: flex;
+	}
+
+	&__button {
+		color: inherit;
+		width: rem(102px);
+		background: center center/cover no-repeat;
+		position: relative;
+
+		@include phones {
+			width: rem(90px);
+		}
+
+		&:hover {
+			opacity: unset;
+		}
+	}
+
+	&__button-text{
+		position: absolute;
+		transform: rotate(-90deg) translateY(-50%);
+		transform-origin: 0 0;
+		left: 50%;
+		bottom: rem(39px);
+		white-space: nowrap;
+		font-size: rem(48px);
+		font-weight: 700;
+		color: #fff;
+
+		@include tablets {
+			bottom: 0px;
+		}
+
+		@include phones {
+			font-size: rem(42px);
+		}
+	}
+
+	&__content {
+		background: rgba(51, 53, 55, 0.9);
+		width: 0;
+		overflow: hidden;
+		transition: width 0.3s linear;
+	}
+
+	&__desc {
+		color: #fff;
+		font-size: rem(16px);
+		font-weight: 400;
+		line-height: rem(24px);
+		max-width: 406px;
+		padding-top: rem(31px);
+		padding-left: rem(38px);
+
+		@include tablets {
+			max-width: 406px;
+			padding-top: rem(43px);
+			padding-left: rem(34px);
+		}
+
+		@include phones {
+			max-width: 317px;
+			padding-top: rem(43px);
+		}
+	}
+}
